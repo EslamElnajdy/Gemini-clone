@@ -10,7 +10,7 @@ const run = async(prompt) => {
   }
 
   try {
-    const response = await fetch('http://localhost:8000/gemini', options);
+    const response = await fetch('/api/index', options);
 
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
